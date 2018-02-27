@@ -1,0 +1,499 @@
+/* Start Global */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+    min-width: 1200px
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+h2, h3, h4 {
+    font-weight: normal
+}
+
+.navbar, 
+.header,
+.services,
+.our-team,
+.testim,
+.our-projects,
+.footer {min-width: 1200px}
+
+/* End Global */
+
+/* Start Navbar */
+
+.navbar {
+    font-size: 18px;
+    height: 0;
+    color: #FFF;
+    position: relative;
+    z-index: 2
+}
+
+.navbar .brand {
+    float: left;
+    width: 50%;
+    text-transform: uppercase;
+    margin-top: 10px
+}
+
+.navbar .links {
+    float: left;
+    width: 50%;
+    margin-top: 25px
+}
+
+.navbar .links li {
+    display: inline-block;
+    padding: 10px 0;
+    margin: 0 10px;
+    border-bottom: 2px solid transparent
+}
+
+.navbar .links li a {
+    color: #FFF;
+    text-decoration: none
+}
+
+.navbar .links li.active a,
+.navbar .links li a:hover {
+    color: #1abc9c
+}
+
+.navbar .links li.active,
+.navbar .links li:hover {
+    border-bottom: 2px solid #1abc9c;
+}
+
+/* End Navbar */
+
+/* Start Header */
+
+.header {
+    background: url('image/Web-Development.png');
+    position: relative
+}
+
+.header .overlay {
+   /* background-color: rgba(0, 0 ,0 , 0.7);*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    color: #FFF;
+    z-index: 1
+}
+
+.header .bx-wrapper {
+    height: 100%
+}
+
+.header .bx-wrapper .bx-viewport {
+    box-shadow: none;
+    border: 0;
+    background: none;
+    height: 100% !important;
+    text-align: center
+}
+
+.header .bxslider {
+    height: 100%
+}
+
+.header .bxslider li {
+    display: block
+}
+
+.header .bxslider li h2 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    margin-top: 0;
+    font-weight: bold
+}
+
+.header .bxslider li h2 span {
+    color: #1abc9c;
+}
+
+/* End Header */
+
+/* start Our Services */
+.Services
+{
+    
+    padding: 80px 20px 40px;
+}
+.Services h2 
+{
+    margin: 0 0 50px;
+    font-weight: normal;
+}
+.special-heading
+{
+    position: relative;
+}
+.special-heading:after
+{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 40px;
+    border: 2px solid #333;
+}
+.Services .item 
+{
+    float: left;
+    width: 33.333333%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.Services .item  i
+{
+    color: #1abc9c;
+    float: left;
+    width: 17%;
+    margin-right: 8%;
+    
+}
+.Services .item .info
+{
+    float: left;
+    width: 75%;
+}
+.Services .item .info h2
+{
+    font-weight: normal;
+    color: #2D2D2D;
+    margin-bottom: 15px;
+}
+.Services .item .info p
+{
+   color: #A2A2A2;
+}
+.seprator
+{
+    border: 1px solid #EEE;
+    margin: 40px 0;
+    display: block;
+}
+
+/* end Our Services */
+
+/*start our teams */
+.team
+{
+    padding: 40px 20px 40px;
+}
+.team .box 
+{
+    float: left;
+}
+.team .box p
+{
+   color: #A2A2A2;
+    padding-top: 10px;
+    line-height: 1.4;
+}
+.team .box:first-child
+{
+    width: 35%;
+}
+.team .box:not(:first-child)
+{
+    width: 15.25%;
+    margin-left: 1%;
+    position: relative;
+}
+.team .box:not(:first-child) .overlay
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+   /* background-color: #1abc9c;*/
+    background-color: rgba(26,188,156, .8);
+    line-height: 183px;
+    font-size: 20px;
+    text-align: center;
+    color: #FFF;
+    display: none;
+}
+.team .box:not(:first-child):hover .overlay
+{
+    display: block;
+}
+.team .box:not(:first-child) img
+{
+    width: 100%;
+} 
+
+.team .teams h2
+{
+    font-weight: normal;
+    color: #2D2D2D;
+    margin-bottom: 15px;
+}
+
+/*end our teams */
+
+/* start testimonials */
+.testim
+{
+   background: url('image/web.jpg');
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    height: 350px;
+   position: relative;
+    text-align: center;
+    padding: 40px 0;
+}
+.testim .t-overlay
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    color: #FFF;
+    background-color: rgba(255,255,255,.1);
+}
+.testim h2
+{
+    font-size: 40px;
+    margin: 20px 0;
+    color: #FFF;
+}
+.testim q
+{
+    font-size: 20px;
+    line-height: 2;
+    padding: 25px;
+    color: #FFF;
+    display: block;
+}
+.testim p
+{
+    font-size: 30px;
+    color: #1abc9c;
+}
+.testim .slide >div
+{
+    display: none;
+}
+.testim .slide .active
+{
+    display: block;
+}
+/* end testimonials */
+
+
+/* start our project */
+.ourproject
+{
+    padding: 60px 0;
+    height: 800px;
+}
+.ourproject h2 
+{
+    font-weight: normal;
+}
+.ourproject ul
+{
+    display: inline-block;
+    margin-top: 50px;
+}
+.ourproject ul li 
+{
+    display: inline-block;
+    border: 2px solid #9C9C9C;
+    margin-right: 5px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 4px;
+    color: #9C9C9C;
+    font-weight: bold;
+}
+.ourproject ul li:hover
+{
+    color: #FFF;
+    background-color:#1abc9c;
+    border: 1px solid #1abc9c;
+    cursor: pointer;   
+}
+.ourproject .gallery
+{
+    margin-top: 50px;
+    overflow: hidden;
+}
+.ourproject .gallery .row >div:nth-child(2)
+{
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.ourproject .gallery .row >div img
+{
+    width: 100%;
+}
+.ourproject .gallery .row >div 
+{
+    width: 32.66666%;
+    float: left;
+    margin-bottom: 12px;
+    position: relative;
+}
+.ourproject .gallery .row >div .over
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    line-height: 232px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #FFF;
+    color: #FFF;
+    background-color: rgba(33,183,156,.5);
+    display: none;
+}
+
+.ourproject .gallery .row >div .heart
+{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: #FFF;
+    display: none;
+    }
+.ourproject .gallery .row >div:hover .over,
+.ourproject .gallery .row >div:hover .heart
+{
+    display: block;
+}
+.mix
+{
+    display: none;
+}
+/* end  our project*/
+
+/* start footer */ 
+.footer
+{
+    overflow: hidden;
+    background-color:#232323;
+    color: #6C6C6C;
+    padding: 40px;
+    margin-top: 40px;
+}
+.footer h2
+{
+    color: #FFF;
+    font-weight: normal;
+}
+.footer .about
+{
+    float: left;
+    width: 25%;
+}
+.footer .about p
+{
+    margin-bottom: 20px;
+    line-height: 1.5;
+    color: #6E6E6E;
+}
+.footer .about i
+{
+    border: 1px solid #6C6C6C;
+    padding: 10px;
+    margin-right: 5px;
+    color: #9C9C9C;
+}
+.footer .copy
+{
+    text-align: center;
+    margin-top: 25px;
+}
+.footer .tags
+{
+    float: left;
+    width: 25%;
+}
+.footer .tags span
+{
+    border: 1px solid #FEFEFE;
+    padding: 10px;
+    color: #FEFEFE;
+    margin-right: 10px;
+    display: inline-block;
+    margin-right: 5px;
+    margin-top: 10px;
+}
+
+.footer .posts
+{
+    float: left;
+    width: 25%;
+}
+.footer .posts div 
+{
+    overflow: hidden;
+}
+.footer .posts div img
+{
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.footer .posts div h4
+{
+    margin: 15px 0;
+    color: #CCC;
+    font-weight: normal;
+}
+.footer .categories
+{
+    float: left;
+    width: 25%;
+}
+.footer .categories p
+{
+   border-bottom: 1px solid #6C6C6C;
+    padding-bottom: 10px;
+}
+/* end footer */
+
+/* strat framwork */ 
+.clearfix
+{
+    clear: both;
+}
